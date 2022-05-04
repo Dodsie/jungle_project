@@ -3,7 +3,7 @@
   <header class="page-header">
     <h1>My Cart</h1>
   </header>
-
+<% if cart.size != 0 %>
   <div class="panel panel-default items">
     <table class="table table-bordered">
       <thead>
@@ -40,7 +40,7 @@
           data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
           data-amount="<%= cart_subtotal_cents %>"
           data-name="Jungle"
-          data-description="Khurram Virani's Jungle Order"
+          data-description="The Jungle Order"
           data-locale="auto"
           data-email="kvirani@gmail.com"
           data-currency="cad">
@@ -48,5 +48,9 @@
       <% end %>
     </div>
   </div>
+  <% else %>
+      <h3>Oh No! Your Cart Is Empty! 😮‍💨 </h3>
+      <%= link_to 'Shop Now', root_url, class: "btn btn-primary"%>
+      <% end %>
 
 </section>
