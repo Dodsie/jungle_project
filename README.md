@@ -2,7 +2,7 @@
 
 A mini e-commerce application built with Rails 6.1.
 ![Home-Screen](https://github.com/Dodsie/jungle_project/blob/master/pictures/Screen%20Shot%202022-05-11%20at%204.49.32%20PM.png?raw=true)
-![ProductPages]()
+![ProductPages](https://github.com/Dodsie/jungle_project/blob/master/pictures/Screen%20Shot%202022-05-11%20at%204.49.48%20PM.png?raw=true)
 
 
 ## Setup
